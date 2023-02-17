@@ -1,0 +1,148 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6rem;
+  justify-content: center;
+  background-image: url(/background-6.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  gap: 5rem;
+  justify-content: center;
+  background-color: #f3e8d3;
+  padding: 5rem;
+  border-radius: 5pt;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.container>img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4pt;
+}
+
+/* .container>img:hover {
+  box-shadow: 5pt 5pt #ed1b4c;
+} */
+
+/* .container:hover {
+  transform: scale(1.1);
+} */
+
+.musicName {
+  font-family: 'Unbounded', cursive;
+  font-weight: 800;
+  font-size: 16pt;
+  padding: 1rem;
+  color: #363630;
+  text-align: center;
+}
+
+.musicName:hover {
+  color: rgb(35, 79, 161);
+}
+
+.musicPrice {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 12pt;
+  color: rgb(22, 20, 20);
+}
+
+.header1{
+  background-color: #234fa1;
+  margin-bottom: 3rem;
+  padding-left: 22pt;
+  padding-right: 20pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  border: solid 10pt #E2CB69;
+  /* box-shadow: 5pt 5pt #363630; */
+  border-radius: 5pt;
+}
+
+.header2 {
+  background-color: #7B6C53;
+  padding: 8pt;
+  padding-left: 20pt;
+  padding-right: 19pt;
+  border: solid 3pt #f3e8d3;
+  border-radius: 5pt;
+  transition: all 300ms;
+}
+
+.header2:hover {
+  transform: translateY(-5pt);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    padding: 2rem;
+  }
+
+  .header1{
+    background-color: rgb(35, 79, 161);
+    margin-bottom: 2rem;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    border: solid 3pt #363630;
+    box-shadow: 5pt 5pt #363630;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+
+.note {
+  background-color: #234fa1;
+  position: absolute;
+}
+
+.notePara {
+  background-color: #234fa1;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: #f3e8d3;
+  font-family: inter;
+  font-size: 12pt;
+  position: absolute;
+  height: 100;
+  width: 16rem;
+  border-radius: 0pt;
+  transition: all 300ms;
+  /* box-shadow: 0 0 5pt 5pt inset rgb(77, 139, 197); */
+  box-shadow: 3pt 3pt #d6113f;
+  border: solid 3pt #d6113f;
+}
+
+.title {
+  font-family: 'Shrikhand', cursive;
+  font-size: 48pt;
+  letter-spacing: 3pt;
+  color: #d6113f;
+  text-align: center;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+}
